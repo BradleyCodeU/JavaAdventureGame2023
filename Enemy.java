@@ -5,7 +5,7 @@ Enemy extends Npc (6 tasks)
   ✅ + Enemy(String _name, String _description)
   🔳 + String getAttackName()
   🔳 + int getHealth
-  🔳 + int getMagicWeakness()
+  ✅ + int getMagicWeakness()
   🔳 + void loseHealth(int h)
   🔳 + void setAttackName()
 */
@@ -40,6 +40,11 @@ public class Enemy extends Npc
   }
 
   // methods go down here
+
+  public int getMagicWeakness()
+  {
+    return magicWeakness;
+  }
 
 
 }
