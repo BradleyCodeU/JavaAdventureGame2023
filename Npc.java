@@ -3,7 +3,7 @@ Npc (7 tasks)
 🔳 - private instance vars for name, speech, description
 ✅ + NoArgsConstructor
 ✅ + Npc(String _name, String _description)
-🔳 + String getName
+✅ + String getName
 🔳 + String getSpeech
 🔳 + void setDescription(String d)
 🔳 + void setName(String _name)
@@ -30,7 +30,10 @@ public class Npc
   }
 
   // methods go down here
-
+  public String getName() 
+  {
+    return name;
+  }
   
 
 
