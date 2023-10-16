@@ -16,7 +16,10 @@ public class Item
 {
   // instance variables go here
   // private instance vars for name, strength, description, int magicType
-
+  private String name;
+  private int strength;
+  private String description;
+  private int magicType;
 
 
   
@@ -41,6 +44,18 @@ public class Item
 
   // methods go down here
 
+  }
+  public void setDescription(String d){
+     description = d;
+  }
+  
+  void weaken(){
+    strength = strength/2;
+  }
+  
+  public String toString(){
+    return description:
+  }
 
 
 }
