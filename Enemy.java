@@ -21,6 +21,9 @@ public class Enemy extends Npc
   }
 
   // instance variables go here
+  private double health;
+  private int magicWeakness;
+  private String attackName;
   // private instance vars for health, int magicWeakness, attackName
 
   public Enemy(){
@@ -40,6 +43,14 @@ public class Enemy extends Npc
   }
 
   // methods go down here
+
+  public String getAttackName(){
+    return attackName;
+  }
+
+  public double getHealth(){
+    return health;
+  }
 
 
 }
