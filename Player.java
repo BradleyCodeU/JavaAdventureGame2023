@@ -9,7 +9,7 @@ Player (12 tasks)
   🔳 + Room getCurrentRoom
   🔳 + Item getBackpack
   🔳 + void increaseEnemiesDefeated() // increases by 1
-  🔳 + void loseHealth(int damage) // reduces health by damage
+  ✅ + void loseHealth(int damage) // reduces health by damage
   🔳 + void setCurrentRoom(Room newRoom)
   🔳 + void setBackpack(Item newItem)
   🔳 + toString() // returns all the player stats
@@ -29,5 +29,10 @@ public class Player
     }
 
     // methods go down here
+
+    public void loseHealth(int damage) 
+    {
+       health = getHealth() - damage; 
+    }
 
 }
