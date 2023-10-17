@@ -30,6 +30,10 @@ public class Npc
   }
 
   // methods go down here
+  /**
+    Gets the name of the NPC
+    @return String  Returns the name of the NPC
+  */
   public String getName() 
   {
     return name;
