@@ -41,6 +41,10 @@ public class Enemy extends Npc
 
   // methods go down here
 
+  /**
+    Gets the Magic Weakness of the enemy
+    @return Int  Returns Magic Weakness
+  */
   public int getMagicWeakness()
   {
     return magicWeakness;
