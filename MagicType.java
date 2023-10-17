@@ -22,6 +22,9 @@ public class MagicType
   public static MagicType getRandomMagicType()
   {
     int dice = (int)(Math.random()*3);
+    if(dice == 0){
+      return MagicType.FIRE;
+    }
   }
 
 }
