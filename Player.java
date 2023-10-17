@@ -30,9 +30,13 @@ public class Player
 
     // methods go down here
 
+    /**
+    * Sets the health after the player takes damage. 
+    * @param int  The amount of damage the player takes
+    */
     public void loseHealth(int damage) 
     {
-       health = getHealth() - damage; 
+       health -= damage;  
     }
 
 }
