@@ -16,9 +16,21 @@ public class Item
 {
   // instance variables go here
   // private instance vars for name, strength, description, int magicType
+  /** 
+   represents the item's name
+  */
   private String name;
+  /** 
+   represents the item's strength
+  */
   private int strength;
+  /** 
+   represents the item's description
+  */
   private String description;
+    /** 
+   represents the item's magic type
+  */
   private int magicType;
 
 
@@ -44,15 +56,21 @@ public class Item
 
   // methods go down here
 
-  }
+  /** void setDescription()
+  returns the description of the item
+  */
   public void setDescription(String d){
      description = d;
   }
-  
+  /** void weaken()
+  makes strength = strength divided byy2
+  */
   public void weaken(){
     strength = strength/2;
   }
-  
+  /** String toString()
+  returns the description and replaces the pre made toString
+  */
   public String toString(){
     return description;
   }
