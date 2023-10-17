@@ -45,7 +45,7 @@ public class Player
     returns the amount of enemies defeated by the player
     @return the amount of enemies defeated by the player
   */
-    int getEnemiesDefeated(){
+    public int getEnemiesDefeated(){
       return enemiesDefeated;
     }
 
@@ -56,7 +56,7 @@ public class Player
     returns the health of the player
     @return the health of the player
   */
-    int getHealth(){
+    public int getHealth(){
       return health
     }
 
@@ -67,7 +67,7 @@ public class Player
     returns the kick strength of the player
     @return the kick strength of the player
   */
-    int getKickStrength(){
+    public int getKickStrength(){
       return kickStrength;
     }
 }
