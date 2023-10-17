@@ -44,9 +44,19 @@ public class Enemy extends Npc
 
   // methods go down here
 
+  /**
+  * The getAttackName method returns attackName as a String.
+  * @return String   The name of the attack.
+  */
+
   public String getAttackName(){
     return attackName;
   }
+
+  /**
+  * The getHealth method returns the health of the enemy as a double.
+  * @return double   The health of the enemy.
+  */
 
   public double getHealth(){
     return health;
