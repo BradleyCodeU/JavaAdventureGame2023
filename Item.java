@@ -40,7 +40,12 @@ public class Item
   }
 
   // methods go down here
-  public isBroken() 
+  /**
+    Checks if an item is broken or not. Returns True if strength 
+    is less than or equal to 0 otherwise it returns false.
+    @return Boolean  True if strength is less than or equal to 0 Otherwise False
+  */
+  public boolean isBroken() 
   {
     if (strength <= 0) 
     {
