@@ -21,7 +21,7 @@ public class Enemy extends Npc
   }
 
   // instance variables go here
-  private double health;
+  private int health;
   private int magicWeakness;
   private String attackName;
   // private instance vars for health, int magicWeakness, attackName
@@ -54,12 +54,39 @@ public class Enemy extends Npc
   }
 
   /**
-  * The getHealth method returns the health of the enemy as a double.
-  * @return double   The health of the enemy.
+  * The getHealth method returns the health of the enemy as an integer.
+  * @return int   The health of the enemy.
   */
 
-  public double getHealth(){
+  public int getHealth(){
     return health;
+  }
+
+  /**
+  * The getMagicWeakness method returns the magicWeakness of the enemy as an integer.
+  * @return int   The magicWeakness of the enemy.
+  */
+
+  public int getMagicWeakness(){
+    return magicWeakness;
+  }
+
+  /** void loseHealth()
+  * Decreases the health by specified amount.
+  * @param int h   integer to decrease by
+  */
+
+  public void loseHealth(int h){
+    health = health - h;
+  }
+
+  /** void setAttackName()
+  * Sets the attackName to specified string.
+  * @param String _attackName   A string that will replace the attackName
+  */
+
+  public void setAttackName(String _attackName){
+    attackName = _attackName;
   }
 
 
