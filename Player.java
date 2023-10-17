@@ -17,6 +17,7 @@ Player (12 tasks)
 public class Player
 {
     // private instance vars go here
+    int punchStrenth;
 
     public Player()
     {
@@ -29,5 +30,20 @@ public class Player
     }
 
     // methods go down here
+
+    /**
+    void setPunchStrength(int _punchStrength) changes the player's punch strength to the value sent into _punchStrength
+    */
+    public void setPunchStrength(int _punchStrength){
+      punchStrength = _punchStrength;
+    }
+  
+    /**
+    int getPunchStrength returns the player's punch strength
+    @return punchStrength
+    */
+    public int getPunchStrength(){
+      return punchStrength;
+    }
 
 }
