@@ -49,12 +49,12 @@ public class Item
      description = d;
   }
   
-  void weaken(){
+  public void weaken(){
     strength = strength/2;
   }
   
   public String toString(){
-    return description:
+    return description;
   }
 
 
