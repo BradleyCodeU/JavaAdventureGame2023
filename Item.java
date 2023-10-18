@@ -56,6 +56,14 @@ public class Item
 
   // methods go down here
 
+  /**
+  int getMagicType()
+  returns the int stored in magicType which relates to a type of magic
+  */
+  public int getMagicType(){
+    return magicType;
+  }
+  
   /** void setDescription()
   returns the description of the item
   */
