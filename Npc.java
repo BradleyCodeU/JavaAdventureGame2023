@@ -6,7 +6,7 @@ Npc (7 tasks)
 ✅ + String getName
 🔳 + String getSpeech
 🔳 + void setDescription(String d)
-🔳 + void setName(String _name)
+✅ + void setName(String _name)
 🔳 + void setSpeech
 🔳 + toString() // returns the description
 */
@@ -30,6 +30,17 @@ public class Npc
   }
 
   // methods go down here
+
+
+  /**
+    Sets the name of the NPC to a new name
+    @param String  A new name
+  */
+  public void setName(String _name) 
+  {
+    name = _name;
+  }
+
   /**
     Gets the name of the NPC
     @return String  Returns the name of the NPC
