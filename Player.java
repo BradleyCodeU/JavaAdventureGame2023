@@ -70,5 +70,14 @@ public class Player
     public int getKickStrength(){
       return kickStrength;
     }
+    /** String toString()
+        @returns the health, kick strength, punch strength, and enemies defeated
+    */
+    public String toString(){
+     String result += "Health is " + health;
+     result += "/nKick Strength is " + kickStrength;
+     result += "/nPunch Strength is " + punchStrength;
+     result += "/n" +  enemiesDefeated + " enemies have been defeated";
+     return result;
 }
   
