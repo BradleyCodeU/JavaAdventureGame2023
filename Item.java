@@ -54,7 +54,7 @@ public class Item
     magicType = 1;
   }
 
-  // methods go down here
+  // methods go down here   
 
   
   /**
