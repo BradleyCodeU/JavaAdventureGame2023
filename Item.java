@@ -8,7 +8,7 @@ Item (9 tasks)
   🔳 + int getStrength()
   🔳 + void setDescription(String d)
   🔳 + void setName(String _name)
-  🔳 + isBroken() // returns true if the strength is zero or less, otherwise returns true
+  ✅ + isBroken() // returns true if the strength is zero or less, otherwise returns false
   🔳 + toString() // returns the description
   🔳 + void weaken() // sets strength to be strength divided by two
 */
@@ -56,6 +56,24 @@ public class Item
 
   // methods go down here
 
+  
+  /**
+    Checks if an item is broken or not. Returns True if strength 
+    is less than or equal to 0 otherwise it returns false.
+    @return Boolean  True if strength is less than or equal to 0 Otherwise False
+  */
+  public boolean isBroken() 
+  {
+    if (strength <= 0) 
+    {
+      return true;
+    }
+    else 
+    {
+      return false;
+    }
+  }
+
   /** void setDescription()
   returns the description of the item
   */
@@ -73,6 +91,7 @@ public class Item
   */
   public String toString(){
     return description;
+
   }
 
 
