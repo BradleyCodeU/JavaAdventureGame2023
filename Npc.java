@@ -31,6 +31,14 @@ public class Npc
 
   // methods go down here
 
+  /**
+    Sets the name of the NPC to a new name
+    @param String  A new name
+  */
+  public void setName(String _name) 
+  {
+    name = _name;
+  }
   
 
 
