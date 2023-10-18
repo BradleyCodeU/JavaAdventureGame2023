@@ -6,7 +6,7 @@ Room (9 tasks)
 🔳 + Npc getCharacter()
 🔳 + Item getItem()
 ✅ + Room getLocationTo(String direction)
-🔳 + String getName()
+✅ + String getName()
 ✅ + String getPossibleDirections()
 ✅ + void linkRoom(Room r, String direction)
 🔳 + void setCharacter(Npc character)
@@ -76,6 +76,14 @@ public class Room
     if(west != null){
       possibleDirections += "west, "
     }
+  }
+
+  /**
+  String getName() gets the name of the room
+  @return returns the name of the room
+  */
+  public String getName(){
+    return name;
   }
   
   /** 

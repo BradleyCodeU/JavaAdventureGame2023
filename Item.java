@@ -3,12 +3,12 @@ Item (9 tasks)
   🔳 - private instance vars for name, strength, description, int magicType
   ✅ + NoArgsConstructor
   ✅ + Item(String _name, String _description)
-  🔳 + int getMagicType()
+  ✅ + int getMagicType()
   🔳 + String getName()
   🔳 + int getStrength()
   🔳 + void setDescription(String d)
   🔳 + void setName(String _name)
-  🔳 + isBroken() // returns true if the strength is zero or less, otherwise returns true
+  ✅ + isBroken() // returns true if the strength is zero or less, otherwise returns false
   🔳 + toString() // returns the description
   🔳 + void weaken() // sets strength to be strength divided by two
 */
@@ -54,8 +54,34 @@ public class Item
     magicType = 1;
   }
 
-  // methods go down here
+  // methods go down here   
 
+  
+  /**
+    Checks if an item is broken or not. Returns True if strength 
+    is less than or equal to 0 otherwise it returns false.
+    @return Boolean  True if strength is less than or equal to 0 Otherwise False
+  */
+  public boolean isBroken() 
+  {
+    if (strength <= 0) 
+    {
+      return true;
+    }
+    else 
+    {
+      return false;
+    }
+  }
+
+  /**
+  int getMagicType()
+  returns the int stored in magicType which relates to a type of magic
+  */
+  public int getMagicType(){
+    return magicType;
+  }
+  
   /** void setDescription()
   returns the description of the item
   */
@@ -73,6 +99,7 @@ public class Item
   */
   public String toString(){
     return description;
+
   }
 
 
