@@ -3,7 +3,7 @@ Item (9 tasks)
   🔳 - private instance vars for name, strength, description, int magicType
   ✅ + NoArgsConstructor
   ✅ + Item(String _name, String _description)
-  🔳 + int getMagicType()
+  ✅ + int getMagicType()
   🔳 + String getName()
   🔳 + int getStrength()
   🔳 + void setDescription(String d)
