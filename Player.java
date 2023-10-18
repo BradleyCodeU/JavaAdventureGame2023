@@ -57,7 +57,7 @@ public class Player
     @return the health of the player
   */
     public int getHealth(){
-      return health
+      return health;
     }
 
 
