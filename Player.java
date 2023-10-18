@@ -16,7 +16,7 @@ Player (12 tasks)
   ✅ + void loseHealth(int damage) // reduces health by damage
   🔳 + void setCurrentRoom(Room newRoom)
   🔳 + void setBackpack(Item newItem)
-  🔳 + toString() // returns all the player stats
+  ✅ + toString() // returns all the player stats
 */
 public class Player
 {
@@ -78,6 +78,17 @@ public class Player
   */
     public int getKickStrength(){
       return kickStrength;
+    }
+
+    /** String toString()
+        @returns the health, kick strength, punch strength, and enemies defeated
+    */
+    public String toString(){
+       String result += "Health is " + health;
+       result += "/nKick Strength is " + kickStrength;
+       result += "/nPunch Strength is " + punchStrength;
+       result += "/n" +  enemiesDefeated + " enemies have been defeated";
+       return result;
     }
 
   
