@@ -5,7 +5,7 @@ Player (12 tasks)
   🔳 + int getEnemiesDefeated
   🔳 + int getHealth
   🔳 + int getKickStrength
-  🔳 + int getPunchStrength
+  ✅ + int getPunchStrength
   🔳 + Room getCurrentRoom
   🔳 + Item getBackpack
   🔳 + void increaseEnemiesDefeated() // increases by 1
@@ -17,7 +17,7 @@ Player (12 tasks)
 public class Player
 {
     // private instance vars go here
-    int punchStrenth;
+    int punchStrength;
 
     public Player()
     {
@@ -31,12 +31,7 @@ public class Player
 
     // methods go down here
 
-    /**
-    void setPunchStrength(int _punchStrength) changes the player's punch strength to the value sent into _punchStrength
-    */
-    public void setPunchStrength(int _punchStrength){
-      punchStrength = _punchStrength;
-    }
+
   
     /**
     int getPunchStrength returns the player's punch strength
