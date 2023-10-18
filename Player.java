@@ -13,7 +13,7 @@ Player (12 tasks)
   🔳 + Room getCurrentRoom
   🔳 + Item getBackpack
   🔳 + void increaseEnemiesDefeated() // increases by 1
-  🟧 + void loseHealth(int damage) // reduces health by damage
+  ✅ + void loseHealth(int damage) // reduces health by damage
   🔳 + void setCurrentRoom(Room newRoom)
   🔳 + void setBackpack(Item newItem)
   🔳 + toString() // returns all the player stats
@@ -61,7 +61,15 @@ public class Player
     }
 
 
-  
+    /**
+    * Sets the health after the player takes damage. 
+    * @param int  The amount of damage the player takes
+    */
+    public void loseHealth(int damage) 
+    {
+       health -= damage;  
+    }
+
   /**
     int getkickStrength()
     returns the kick strength of the player
@@ -72,3 +80,4 @@ public class Player
     }
 }
   
+
