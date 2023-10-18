@@ -9,7 +9,7 @@ Player (12 tasks)
   ✅ + int getEnemiesDefeated
   ✅ + int getHealth
   ✅ + int getKickStrength
-  🔳 + int getPunchStrength
+  ✅ + int getPunchStrength
   🔳 + Room getCurrentRoom
   🔳 + Item getBackpack
   🔳 + void increaseEnemiesDefeated() // increases by 1
@@ -27,6 +27,7 @@ public class Player
     private int enemiesDefeated;
     private Room currentRoom;
     private Item backpack;
+
 
   
     public Player()
@@ -78,6 +79,15 @@ public class Player
     public int getKickStrength(){
       return kickStrength;
     }
-}
+
   
+    /**
+    int getPunchStrength returns the player's punch strength
+    @return punchStrength
+    */
+    public int getPunchStrength(){
+      return punchStrength;
+    }
+
+}
 
