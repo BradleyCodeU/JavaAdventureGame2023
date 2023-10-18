@@ -77,6 +77,14 @@ public class Room
       possibleDirections += "west, "
     }
   }
+
+  /**
+  String getName() gets the name of the room
+  @return returns the name of the room
+  */
+  public String getName(){
+    return name;
+  }
   
   /** 
   * linkRoom(Room r, String direction) makes connections between two rooms
