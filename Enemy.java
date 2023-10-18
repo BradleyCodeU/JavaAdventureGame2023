@@ -5,7 +5,7 @@ Enemy extends Npc (6 tasks)
   ✅ + Enemy(String _name, String _description)
   🔳 + String getAttackName()
   🔳 + int getHealth
-  🔳 + int getMagicWeakness()
+  ✅ + int getMagicWeakness()
   🔳 + void loseHealth(int h)
   🔳 + void setAttackName()
 */
@@ -21,6 +21,9 @@ public class Enemy extends Npc
   }
 
   // instance variables go here
+  private int health;
+  private int magicWeakness;
+  private String attackName;
   // private instance vars for health, int magicWeakness, attackName
 
   public Enemy(){
@@ -40,6 +43,55 @@ public class Enemy extends Npc
   }
 
   // methods go down here
+
+  /**
+    Gets the Magic Weakness of the enemy
+    @return Int  Returns Magic Weakness
+  */
+  public int getMagicWeakness()
+  {
+    return magicWeakness;
+  }
+
+  /**
+  * The getAttackName method returns attackName as a String.
+  * @return String   The name of the attack.
+  */
+  public String getAttackName(){
+    return attackName;
+  }
+
+  /**
+  * The getHealth method returns the health of the enemy as an integer.
+  * @return int   The health of the enemy.
+  */
+  public int getHealth(){
+    return health;
+  }
+
+  /**
+  * The getMagicWeakness method returns the magicWeakness of the enemy as an integer.
+  * @return int   The magicWeakness of the enemy.
+  */
+  public int getMagicWeakness(){
+    return magicWeakness;
+  }
+
+  /** void loseHealth()
+  * Decreases the health by specified amount.
+  * @param int h   integer to decrease by
+  */
+  public void loseHealth(int h){
+    health = health - h;
+  }
+
+  /** void setAttackName()
+  * Sets the attackName to specified string.
+  * @param String _attackName   A string that will replace the attackName
+  */
+  public void setAttackName(String _attackName){
+    attackName = _attackName;
+  }
 
 
 }
