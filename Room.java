@@ -18,6 +18,14 @@ Room (9 tasks)
 public class Room
 {
   // private instance vars go here
+  private String name;
+  private String description;
+  private Npc character;
+  private Room roomItem;
+  private Room roomNorth;
+  private Room roomSouth;
+  private Room roomEast;
+  private Room roomWest;
  
   public Room(){
    name = "room name";
