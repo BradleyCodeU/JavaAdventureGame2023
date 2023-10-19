@@ -108,6 +108,13 @@ public class Room
       east = r;
     }
   }
+  /** void set room name
+  * sets room name to a specific string
+  * @param String _name a string that will replace the room name
+  */
+  public void setName(String _name){
+  name = _name;
+  }
   
   // methods go down here
   
