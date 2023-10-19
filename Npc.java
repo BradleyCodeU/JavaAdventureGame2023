@@ -14,6 +14,9 @@ public class Npc
 {
   // instance variable go here
   // private instance vars for name, speech, description
+  private String name;
+  private String speech;
+  private String description;
 
   public Npc()
   {
