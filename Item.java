@@ -4,10 +4,10 @@ Item (9 tasks)
   ✅ + NoArgsConstructor
   ✅ + Item(String _name, String _description)
   ✅ + int getMagicType()
-  🔳 + String getName()
+  ✅ + String getName()
   🔳 + int getStrength()
   🔳 + void setDescription(String d)
-  🔳 + void setName(String _name)
+  ✅ + void setName(String _name)
   ✅ + isBroken() // returns true if the strength is zero or less, otherwise returns false
   🔳 + toString() // returns the description
   🔳 + void weaken() // sets strength to be strength divided by two
@@ -32,10 +32,7 @@ public class Item
    represents the item's magic type
   */
   private int magicType;
-  /** 
-   represents the item's speech
-  */
-  private string speech;
+
 
   
   public Item()
@@ -110,12 +107,12 @@ public class Item
   public String getName(){
     return name;
   }
+  /** sets the name
+  */
   public void setName(_name){
     name = _name
   }
-  public void setSpeech(_speech){
-    speech = _speech
-  }
+
 
 }
 
