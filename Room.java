@@ -12,7 +12,7 @@ Room (9 tasks)
 🔳 + void setCharacter(Npc character)
 🔳 + void setDescription(String d) DONE
 🔳 + void setItem(Item i)
-🔳 + void setName(String _name)
+✅ + void setName(String _name)
 🔳 + toString() // returns the description DONE
 */
 public class Room
