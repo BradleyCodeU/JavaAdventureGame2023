@@ -1,6 +1,6 @@
 /*
 Room (9 tasks)
-🔳 - private instance vars for name, description, character, roomItem, Room north, Room south, Room east, Room west
+✅ - private instance vars for name, description, character, roomItem, Room north, Room south, Room east, Room west
 ✅ + NoArgsConstructor
 ✅ + Room(String _name)
 🔳 + Npc getCharacter()
@@ -18,6 +18,14 @@ Room (9 tasks)
 public class Room
 {
   // private instance vars go here
+  private String name;
+  private String description;
+  private Npc character;
+  private Room roomItem;
+  private Room roomNorth;
+  private Room roomSouth;
+  private Room roomEast;
+  private Room roomWest;
  
   public Room(){
    name = "room name";
@@ -107,6 +115,13 @@ public class Room
     else if (direction == "east") {
       east = r;
     }
+  }
+  /** void set room name
+  * sets room name to a specific string
+  * @param String _name a string that will replace the room name
+  */
+  public void setName(String _name){
+  name = _name;
   }
   
   // methods go down here

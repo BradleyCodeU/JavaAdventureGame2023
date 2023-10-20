@@ -25,6 +25,12 @@ public class MagicType
     if(dice == 0){
       return MagicType.FIRE;
     }
+    else if(dice == 1){
+      return MagicType.ICE;
+    }
+    else {
+      return MagicType.LIGHTNING;
+    }
   }
 
 }
