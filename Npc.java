@@ -1,6 +1,6 @@
 /*
 Npc (7 tasks)
-🔳 - private instance vars for name, speech, description
+✅ - private instance vars for name, speech, description
 ✅ + NoArgsConstructor
 ✅ + Npc(String _name, String _description)
 ✅ + String getName
@@ -14,6 +14,9 @@ public class Npc
 {
   // instance variable go here
   // private instance vars for name, speech, description
+  private String name;
+  private String speech;
+  private String description;
 
   public Npc()
   {
