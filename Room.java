@@ -1,6 +1,6 @@
 /*
 Room (9 tasks)
-🔳 - private instance vars for name, description, character, roomItem, Room north, Room south, Room east, Room west
+✅ - private instance vars for name, description, character, roomItem, Room north, Room south, Room east, Room west
 ✅ + NoArgsConstructor
 ✅ + Room(String _name)
 🔳 + Npc getCharacter()
