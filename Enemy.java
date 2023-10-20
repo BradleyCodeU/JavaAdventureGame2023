@@ -1,13 +1,13 @@
 /*
 Enemy extends Npc (6 tasks)
-  🔳 - private instance vars for health, int magicWeakness, attackName
+  ✅ - private instance vars for health, MagicType magicWeakness, attackName
   ✅ + NoArgsConstructor
   ✅ + Enemy(String _name, String _description)
-  🔳 + String getAttackName()
-  🔳 + int getHealth
-  ✅ + int getMagicWeakness()
-  🔳 + void loseHealth(int h)
-  🔳 + void setAttackName()
+  ✅ + String getAttackName()
+  ✅ + int getHealth
+  ✅ + MagicType getMagicWeakness()
+  ✅ + void loseHealth(int h)
+  ✅ + void setAttackName()
 */
 public class Enemy extends Npc
 {
@@ -22,14 +22,14 @@ public class Enemy extends Npc
 
   // instance variables go here
   private int health;
-  private int magicWeakness;
+  private MagicType magicWeakness;
   private String attackName;
   // private instance vars for health, int magicWeakness, attackName
 
   public Enemy(){
     super();
     health = 100;
-    magicWeakness = 1;
+    magicWeakness = MagicType.FIRE;
     attackName = "slap";
     enemyCounter++;
   }
@@ -37,21 +37,14 @@ public class Enemy extends Npc
   public Enemy(String enemyName, String enemyDescription){
     super(enemyName,enemyDescription);
     health = 100;
-    magicWeakness = 1;
+    magicWeakness = MagicType.FIRE;
     attackName = "slap";
     enemyCounter++;
   }
 
   // methods go down here
 
-  /**
-    Gets the Magic Weakness of the enemy
-    @return Int  Returns Magic Weakness
-  */
-  public int getMagicWeakness()
-  {
-    return magicWeakness;
-  }
+
 
   /**
   * The getAttackName method returns attackName as a String.
@@ -70,10 +63,10 @@ public class Enemy extends Npc
   }
 
   /**
-  * The getMagicWeakness method returns the magicWeakness of the enemy as an integer.
-  * @return int   The magicWeakness of the enemy.
+  * The getMagicWeakness method returns the magicWeakness of the enemy as a MagicType.
+  * @return MagicType   The magicWeakness of the enemy.
   */
-  public int getMagicWeakness(){
+  public MagicType getMagicWeakness(){
     return magicWeakness;
   }
 

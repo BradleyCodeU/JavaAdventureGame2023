@@ -1,16 +1,16 @@
 /*
 Item (9 tasks)
-  🔳 - private instance vars for name, strength, description, int magicType
+  ✅ - private instance vars for name, strength, description, MagicType magicType
   ✅ + NoArgsConstructor
   ✅ + Item(String _name, String _description)
-  ✅ + int getMagicType()
+  ✅ + MagicType getMagicType()
   🔳 + String getName()
   🔳 + int getStrength()
-  🔳 + void setDescription(String d)
+  ✅ + void setDescription(String d)
   🔳 + void setName(String _name)
   ✅ + isBroken() // returns true if the strength is zero or less, otherwise returns false
-  🔳 + toString() // returns the description
-  🔳 + void weaken() // sets strength to be strength divided by two
+  ✅ + toString() // returns the description
+  ✅ + void weaken() // sets strength to be strength divided by two
 */
 public class Item
 {
@@ -31,7 +31,7 @@ public class Item
     /** 
    represents the item's magic type
   */
-  private int magicType;
+  private MagicType magicType;
 
 
   
@@ -41,7 +41,7 @@ public class Item
     name = "item name";
     strength = 50;
     description = "item description";
-    magicType = (int)(Math.random()*3+1);
+    magicType = MagicType.getRandomMagicType();
   }
 
 
@@ -50,8 +50,7 @@ public class Item
     name = _name;
     strength = 50;
     description = _description;
-    // set magicType to 1
-    magicType = 1;
+    magicType = MagicType.FIRE;
   }
 
   // methods go down here   
@@ -75,10 +74,10 @@ public class Item
   }
 
   /**
-  int getMagicType()
-  returns the int stored in magicType which relates to a type of magic
+  MagicType getMagicType()
+  returns the magical ability of the item either: fire, ice, or lightning
   */
-  public int getMagicType(){
+  public MagicType getMagicType(){
     return magicType;
   }
   
