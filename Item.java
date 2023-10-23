@@ -32,8 +32,10 @@ public class Item
    represents the item's magic type
   */
   private MagicType magicType;
-
-
+    /** 
+   represents the item's speech
+  */
+  private String speech
   
   public Item()
   {
@@ -101,17 +103,24 @@ public class Item
 
   }
    /** String getName()
-  returns the name
+  returns the name of an item
   */
   public String getName(){
     return name;
   }
-  /** sets the name
+  /** void setName
+  sets the name of an item
   */
   public void setName(_name){
     name = _name
   }
-
+    /** void setSpeech
+  sets the speech of an item
+  */
+  public void setSpeech(_speech){
+    speech = _speech
+  }
+  
 
 }
 
