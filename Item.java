@@ -111,7 +111,14 @@ public class Item
   public void setName(_name){
     name = _name
   }
-
-
+/**
+*
+*Function that gets item strength and returns it
+*
+*@return strength   return item strength
+*/
+  public int getStrength(){
+    return strength;
+  }
 }
 
