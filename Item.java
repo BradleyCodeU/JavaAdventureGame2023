@@ -5,7 +5,7 @@ Item (9 tasks)
   ✅ + Item(String _name, String _description)
   ✅ + MagicType getMagicType()
   ✅ + String getName()
-  🔳 + int getStrength()
+  ✅ + int getStrength()
   ✅ + void setDescription(String d)
   ✅ + void setName(String _name)
   ✅ + isBroken() // returns true if the strength is zero or less, otherwise returns false
@@ -111,6 +111,10 @@ public class Item
   public void setName(_name){
     name = _name
   }
+
+   /** gets the strength
+  */
+
 /**
 *
 *Function that gets item strength and returns it
@@ -120,5 +124,6 @@ public class Item
   public int getStrength(){
     return strength;
   }
+
 }
 
