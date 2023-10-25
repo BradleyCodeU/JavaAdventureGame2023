@@ -33,6 +33,10 @@ public class Item
   */
   private MagicType magicType;
 
+    /** 
+   represents the item's strength
+  */
+  private int strength;
 
   
   public Item()
@@ -111,7 +115,11 @@ public class Item
   public void setName(_name){
     name = _name
   }
-
+   /** gets the strength
+  */
+  public void getStrength(_strength){
+    strength = _strength
+  }
 
 }
 
