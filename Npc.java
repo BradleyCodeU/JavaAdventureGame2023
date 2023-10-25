@@ -1,6 +1,6 @@
 /*
 Npc (7 tasks)
-🔳 - private instance vars for name, speech, description
+✅ - private instance vars for name, speech, description
 ✅ + NoArgsConstructor
 ✅ + Npc(String _name, String _description)
 ✅ + String getName
@@ -14,6 +14,9 @@ public class Npc
 {
   // instance variable go here
   // private instance vars for name, speech, description
+  private String name;
+  private String speech;
+  private String description;
 
   public Npc()
   {
@@ -49,7 +52,22 @@ public class Npc
   {
     return name;
   }
-  
+  // methods go down here
 
+
+  /**
+    *Sets the name of the NPC to a new name
+    *@param String  A new description
+  */
+  public void setDescription(String d) {
+    description = d;
+  }
+  /**
+    *Gets the speech of the NPC 
+    *@Return String  the npc speech
+  */
+  public String getSpeech(){
+    return speech;
+  }
 
 }

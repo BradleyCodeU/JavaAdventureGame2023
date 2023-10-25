@@ -56,7 +56,7 @@ public class Player
     int getHealth()
     returns the health of the player
     @return the health of the player
-  */
+    */
     public int getHealth(){
       return health;
     }
@@ -71,11 +71,11 @@ public class Player
        health -= damage;  
     }
 
-  /**
+    /**
     int getkickStrength()
     returns the kick strength of the player
     @return the kick strength of the player
-  */
+    */
     public int getKickStrength(){
       return kickStrength;
     }
