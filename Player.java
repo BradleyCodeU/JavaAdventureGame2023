@@ -10,12 +10,12 @@ Player (12 tasks)
   ✅ + int getHealth
   ✅ + int getKickStrength
   ✅ + int getPunchStrength
-  🔳 + Room getCurrentRoom
-  🔳 + Item getBackpack
-  🔳 + void increaseEnemiesDefeated() // increases by 1
+  ✅ + Room getCurrentRoom
+  ✅ + Item getBackpack
+  ✅ + void increaseEnemiesDefeated() // increases by 1
   ✅ + void loseHealth(int damage) // reduces health by damage
-  🔳 + void setCurrentRoom(Room newRoom)
-  🔳 + void setBackpack(Item newItem)
+  ✅ + void setCurrentRoom(Room newRoom)
+  ✅ + void setBackpack(Item newItem)
   ✅ + toString() // returns all the player stats
 */
 public class Player
@@ -99,6 +99,20 @@ public class Player
     public int getPunchStrength(){
       return punchStrength;
     }
-
+    public Room getCurrentRoom(){
+      return currentRoom;
+    }
+    public Item getBackpack(){
+     return backpack
+    }
+    public void increaseEnemiesDefeated(){
+     enemiesDefeated++;
+    }
+    public void setCurrentRoom(Room newRoom){
+     currentRoom = newRoom;
+    }
+    public void setBackpack(Item newItem){
+     backpack = newItem;
+    }
 }
 
