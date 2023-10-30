@@ -4,11 +4,11 @@ Npc (7 tasks)
 ✅ + NoArgsConstructor
 ✅ + Npc(String _name, String _description)
 ✅ + String getName
-🔳 + String getSpeech
-🔳 + void setDescription(String d)
+✅ + String getSpeech
+✅ + void setDescription(String d)
 ✅ + void setName(String _name)
-🔳 + void setSpeech
-🔳 + toString() // returns the description
+✅ + void setSpeech
+✅ + toString() // returns the description
 */
 public class Npc
 {
@@ -68,6 +68,17 @@ public class Npc
   */
   public String getSpeech(){
     return speech;
+  }
+
+    public void setSpeech(String _speech)
+  {
+   speech = _speech
+
+  }
+
+  public String toString()
+  {
+    return description.toString();
   }
 
 }
