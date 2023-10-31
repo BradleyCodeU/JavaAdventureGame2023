@@ -22,9 +22,9 @@ public class Room
   private String description;
   private Npc character;
   private Item roomItem;
-  private Room roomNorth;
-  private Room roomSouth;
-  private Room roomEast;
+  private Room north;
+  private Room south;
+  private Room east;
   private Room roomWest;
  
   public Room(){
@@ -52,16 +52,16 @@ public class Room
   // precondition: direction is either "north" or "south" or "east" or "west"
   public Room getLocationTo(String direction)
   {
-    if (direction.equals("north")){
+    if (direction.equals("north") && north != null){
       return north; 
     }
-    else if (direction.equals("south")){
+    else if (direction.equals("south") && south != null){
       return south; 
     }
-    else if (direction.equals("east")){
+    else if (direction.equals("east") && east != null){
       return east; 
     }
-    else if (direction.equals("west")){
+    else if (direction.equals("west") && west != null){
       return west; 
     }
     else {

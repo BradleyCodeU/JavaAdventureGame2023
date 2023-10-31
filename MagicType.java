@@ -1,19 +1,19 @@
-public class MagicType
+public enum MagicType
 {
   // class variables 
   // fire = 0; ice = 1; lightning = 2
   /** 
    * Represents fire magic
    */ 
-  public static final int FIRE = 0;
+  FIRE,
   /** 
    * Represents ice magic
    */ 
-  public static final int ICE = 1;
+  ICE,
   /** 
    * Represents lightning magic
    */ 
-  public static final int LIGHTNING = 2;
+  LIGHTNING;
   // class methods
   /**
    * Returns a randomly selected MagicType
@@ -32,5 +32,20 @@ public class MagicType
       return MagicType.LIGHTNING;
     }
   }
+
+  @Override
+  public String toString() {
+      switch (this.ordinal()) {
+          case 0:
+              return "Fire";
+          case 1:
+              return "Ice";
+          case 2:
+              return "Lightning";
+          default:
+              return null;
+      }
+  }
+  
 
 }

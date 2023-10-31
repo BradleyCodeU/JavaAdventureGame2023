@@ -340,7 +340,7 @@ public class Main
           typewriter(50, "Oof! Tried to run away, but could not escape!\n");
         }
       }
-      enemyLoseHealth(rng, command, e, player.getPunchStrength(), player.getKickStrength(), player.getBackpack());
+      enemyLoseHealth(rng, command, e, player);
       if(player.getBackpack() != null && player.getBackpack().isBroken())
       {
         player.setBackpack(null);
@@ -376,7 +376,7 @@ public class Main
     return player.getHealth();
   }
   
-  public static void enemyLoseHealth(Random rng, String command, Enemy e, int player.getPunchStrength(), int player.getKickStrength(), Item player.getBackpack())
+  public static void enemyLoseHealth(Random rng, String command, Enemy e, Player player)
   {
     int attack = 0;
     if(command.equals("p"))
