@@ -21,7 +21,7 @@ public class Room
   private String name;
   private String description;
   private Npc character;
-  private Room roomItem;
+  private Item roomItem;
   private Room north;
   private Room south;
   private Room east;
@@ -125,7 +125,23 @@ public class Room
   }
   
   // methods go down here
+  public void getCharacter(){
+    return character;
+  }
+  public void getItem(){
+    return roomItem;
+}
+  public void setCharacter(Npc character){
+    this.character = character;
+  }
+
+public void setItem(Item i){
+  this.Item = Item;
+}
   
+  public void setDescription(String d){
+    this.description = description;
+  }
 
 
 }
